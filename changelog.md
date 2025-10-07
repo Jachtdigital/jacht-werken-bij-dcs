@@ -1,5 +1,14 @@
 # Changelog
 
+## [V1.0.4] - 2025-10-07
+
+### Added
+* Added duplicate functionality to vacancy list with "Dupliceren" action link
+* Duplicated vacancies include all ACF fields, metadata, and taxonomy terms
+* Duplicates are created as drafts with " (kopie)" appended to title
+
+---
+
 ## [V1.0.3] - 2025-10-07
 
 ### Changed

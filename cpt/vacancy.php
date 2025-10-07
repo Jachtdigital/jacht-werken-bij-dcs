@@ -150,3 +150,62 @@ function rec_register_settings() {
 function rec_callback_settings_page() {
 	include_once(REC_PLUGIN_DIR . "/templates/settings.php");
 }
+
+
+/* CPT - VACANCY | Add duplicate functionality
+=================================================== */
+add_filter('post_row_actions', 'rec_duplicate_vacancy_link', 10, 2);
+function rec_duplicate_vacancy_link($actions, $post) {
+	if ($post->post_type === Constants::POST_TYPE && current_user_can('edit_posts')) {
+		$actions['duplicate'] = '<a href="' . wp_nonce_url('admin.php?action=rec_duplicate_vacancy&post=' . $post->ID, 'rec_duplicate_' . $post->ID) . '" title="' . __('Dupliceer deze vacature', 'jacht-vacancies') . '">' . __('Dupliceren', 'jacht-vacancies') . '</a>';
+	}
+	return $actions;
+}
+
+add_action('admin_action_rec_duplicate_vacancy', 'rec_duplicate_vacancy');
+function rec_duplicate_vacancy() {
+	if (empty($_GET['post'])) {
+		wp_die(__('Geen vacature om te dupliceren geselecteerd', 'jacht-vacancies'));
+	}
+
+	$post_id = absint($_GET['post']);
+	check_admin_referer('rec_duplicate_' . $post_id);
+
+	$post = get_post($post_id);
+	if (!$post || $post->post_type !== Constants::POST_TYPE) {
+		wp_die(__('Dupliceren mislukt: vacature niet gevonden', 'jacht-vacancies'));
+	}
+
+	// Create duplicate post
+	$new_post = array(
+		'post_title'   => $post->post_title . ' (kopie)',
+		'post_content' => $post->post_content,
+		'post_status'  => 'draft',
+		'post_type'    => $post->post_type,
+		'post_author'  => get_current_user_id()
+	);
+
+	$new_post_id = wp_insert_post($new_post);
+
+	if (is_wp_error($new_post_id)) {
+		wp_die(__('Dupliceren mislukt', 'jacht-vacancies'));
+	}
+
+	// Duplicate all post meta
+	$post_meta = get_post_meta($post_id);
+	foreach ($post_meta as $meta_key => $meta_values) {
+		foreach ($meta_values as $meta_value) {
+			add_post_meta($new_post_id, $meta_key, maybe_unserialize($meta_value));
+		}
+	}
+
+	// Duplicate taxonomies
+	$taxonomies = get_object_taxonomies($post->post_type);
+	foreach ($taxonomies as $taxonomy) {
+		$terms = wp_get_object_terms($post_id, $taxonomy, array('fields' => 'ids'));
+		wp_set_object_terms($new_post_id, $terms, $taxonomy);
+	}
+
+	wp_redirect(admin_url('edit.php?post_type=' . Constants::POST_TYPE));
+	exit;
+}
