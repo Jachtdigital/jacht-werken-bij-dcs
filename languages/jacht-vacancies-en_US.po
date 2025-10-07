@@ -1,0 +1,192 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Jacht - Werken bij DCS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-07 17:00+0000\n"
+"PO-Revision-Date: 2025-10-07 17:00+0000\n"
+"Last-Translator: Jacht Digital Marketing\n"
+"Language-Team: English\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Manual\n"
+"X-Domain: jacht-vacancies"
+
+msgid "Vacatures"
+msgstr "Vacancies"
+
+msgid "Vacature"
+msgstr "Vacancy"
+
+#, php-format
+msgctxt "Variant 1"
+msgid "Nieuwe %s"
+msgstr "New %s"
+
+#, php-format
+msgid "Bewerk %s"
+msgstr "Edit %s"
+
+#, php-format
+msgid "Bekijk %s"
+msgstr "View %s"
+
+#, php-format
+msgid "Zoek %s"
+msgstr "Search %s"
+
+#, php-format
+msgid "Geen %s gevonden"
+msgstr "No %s found"
+
+#, php-format
+msgid "Geen %s gevonden in prullenbak"
+msgstr "No %s found in trash"
+
+#, php-format
+msgid "Alle %s"
+msgstr "All %s"
+
+#, php-format
+msgid "%s attributen"
+msgstr "%s attributes"
+
+#, php-format
+msgid "Invoegen in deze %s"
+msgstr "Insert into this %s"
+
+#, php-format
+msgid "Geüpload naar deze %s"
+msgstr "Uploaded to this %s"
+
+msgid "Uitgelichte afbeelding"
+msgstr "Featured image"
+
+msgid "Uitgelichte afbeelding instellen"
+msgstr "Set featured image"
+
+msgid "Uitgelichte afbeelding verwijderen"
+msgstr "Remove featured image"
+
+msgid "Gebruik als uitgelichte afbeelding"
+msgstr "Use as featured image"
+
+msgid "Afdelingen"
+msgstr "Departments"
+
+msgid "Afdeling"
+msgstr "Department"
+
+#, php-format
+msgid "Update %s"
+msgstr "Update %s"
+
+#, php-format
+msgid "Nieuwe %s toevoegen"
+msgstr "Add new %s"
+
+#, php-format
+msgid "Nieuwe %s naam"
+msgstr "New %s name"
+
+#, php-format
+msgid "Populaire %s"
+msgstr "Popular %s"
+
+#, php-format
+msgid "Toevoegen of verwijderen %s"
+msgstr "Add or remove %s"
+
+#, php-format
+msgid "Kies uit de meest gebruikte %s"
+msgstr "Choose from most used %s"
+
+#, php-format
+msgid "Terug naar %s"
+msgstr "Back to %s"
+
+msgid "Functietitel"
+msgstr "Job title"
+
+msgid "Instellingen"
+msgstr "Settings"
+
+msgid "Dupliceer deze vacature"
+msgstr "Duplicate this vacancy"
+
+msgid "Dupliceren"
+msgstr "Duplicate"
+
+msgid "Geen vacature om te dupliceren geselecteerd"
+msgstr "No vacancy selected to duplicate"
+
+msgid "Dupliceren mislukt: vacature niet gevonden"
+msgstr "Duplication failed: vacancy not found"
+
+msgid "Dupliceren mislukt"
+msgstr "Duplication failed"
+
+msgid "Logs"
+msgstr "Logs"
+
+msgid "Over"
+msgstr "About"
+
+msgid "Wijzigingslog"
+msgstr "Changelog"
+
+msgid "Zoeken"
+msgstr "Search"
+
+msgid "Plugin status"
+msgstr "Plugin status"
+
+msgid "Beschikbare talen"
+msgstr "Available languages"
+
+msgid "Vereiste plugins"
+msgstr "Required plugins"
+
+msgid "PHP versie"
+msgstr "PHP version"
+
+msgid "Plugin versie"
+msgstr "Plugin version"
+
+msgid "IP adres"
+msgstr "IP address"
+
+msgid "Niet ingesteld"
+msgstr "Not set"
+
+msgid "WordPress versie"
+msgstr "WordPress version"
+
+msgid "ACF"
+msgstr "ACF"
+
+msgid "Ingeschakeld"
+msgstr "Enabled"
+
+msgid "Niet ingeschakeld"
+msgstr "Not enabled"
+
+msgid "Polylang"
+msgstr "Polylang"
+
+msgid "Gravity Forms"
+msgstr "Gravity Forms"
+
+msgid "Laden"
+msgstr "Load"
+
+msgid "Geen vacatures gevonden"
+msgstr "No vacancies found"
+
+msgid "Titel"
+msgstr "Title"
+
+msgid "Laatst gewijzigd"
+msgstr "Last modified"

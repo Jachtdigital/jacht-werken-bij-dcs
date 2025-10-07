@@ -1,5 +1,17 @@
 # Changelog
 
+## [V1.0.5] - 2025-10-07
+
+### Added
+* English translation support (en_US)
+* Plugin now supports multiple languages via WordPress language settings
+
+### Changed
+* Renamed translation files to match `jacht-vacancies` text domain
+* Dutch remains the default language, English available as translation
+
+---
+
 ## [V1.0.4] - 2025-10-07
 
 ### Added
