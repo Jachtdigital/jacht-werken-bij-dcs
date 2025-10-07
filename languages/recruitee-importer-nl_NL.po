@@ -1,0 +1,341 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Recruitee importer plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-06 08:02+0000\n"
+"PO-Revision-Date: 2024-03-29 13:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: Nederlands\n"
+"Language: nl_NL\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.3; wp-5.8\n"
+"X-Domain: recruitee-importer"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:25
+#, php-format
+msgid "%s attributes"
+msgstr "%s attributen"
+
+#: ../../../../../Plugins/recruitee-koppeling/classes/Recruitee.php:376
+#: ../../../../../Plugins/recruitee-koppeling/classes/Recruitee.php:410
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:26
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:30
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:34
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:38
+#, php-format
+msgid "%s is not defined"
+msgstr "%s is niet gedefinieerd"
+
+#. Author of the plugin
+msgid "101Media"
+msgstr "101Media"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:46
+msgid "About"
+msgstr "Over"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:176
+msgid "ACF"
+msgstr "ACF"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:108
+msgid "Actions"
+msgstr "Actie"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:88
+#, php-format
+msgid "Add new %s"
+msgstr "Voeg nieuwe %s toe"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:92
+#, php-format
+msgid "Add or remove %s"
+msgstr "Voeg toe of verwijder %s"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:24
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:84
+#, php-format
+msgid "All %s"
+msgstr "Alle %s"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:137
+msgid "Available languages"
+msgstr "Beschikbare talen"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:95
+#, php-format
+msgid "Back to %s"
+msgstr "Terug naar %s"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:47
+msgid "Changelog"
+msgstr "Changelog"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:93
+#, php-format
+msgid "Choose from the most used %s"
+msgstr "Kies uit de meeste gebruikte %s"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:30
+msgid "Delete featured image"
+msgstr "Verwijder uitgelichte afbeelding"
+
+#: ../../../../../Plugins/recruitee-koppeling/functions.php:48
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:18
+#, php-format
+msgid "Deleted %s vacancies"
+msgstr "%s vacatures verwijdert"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:69
+msgid "Department"
+msgstr "Afdeling"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:68
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:129
+msgid "Departments"
+msgstr "Afdelingen"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:17
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:85
+#, php-format
+msgid "Edit %s"
+msgstr "Wijzig %s"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:178
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:186
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:195
+#| msgid "enabled"
+msgid "Enabled"
+msgstr "Geactiveerd"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:28
+msgid "Featured image"
+msgstr "Uitgelichte afbeelding"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:201
+msgid "Form field mapping"
+msgstr "Formvelden mapping"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:193
+msgid "Gravity Forms"
+msgstr "Gravity Forms"
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.101media.nl"
+msgstr "https://www.101media.nl"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:112
+msgid "Import"
+msgstr "Importeren"
+
+#. Description of the plugin
+msgid ""
+"Import job vacancies directly from Recruitee into your WordPress website."
+msgstr ""
+"Importeer vacatures rechtstreeks vanuit Recruitee naar je WordPress-website."
+
+#: ../../../../../Plugins/recruitee-koppeling/functions.php:28
+msgid "Import vacancies"
+msgstr "Importeer vacatures"
+
+#: ../../../../../Plugins/recruitee-koppeling/functions.php:46
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:16
+#, php-format
+msgid "Imported %s new vacancies."
+msgstr "%s nieuwe vacatures geïmporteerd"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:26
+#, php-format
+msgid "Insert into this %s"
+msgstr "Voeg toe aan deze %s"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:167
+msgid "IP address"
+msgstr "IP Adres"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:128
+msgid "Job title"
+msgstr "Functietitel"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:122
+msgid "Last synchronised at"
+msgstr "Laatst bijgewerkt op"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:231
+msgid "Load"
+msgstr "Laden"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:45
+msgid "Logs"
+msgstr "Logboek"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:123
+msgid "Never"
+msgstr "Nooit"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:89
+#, php-format
+msgid "New %s name"
+msgstr "Nieuwe %s naam"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:22
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:94
+#, php-format
+msgid "No %s found"
+msgstr "Geen %s gevonden"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:23
+#, php-format
+msgid "No %s found in trash"
+msgstr "Geen %s gevonden in de prullenbak"
+
+#: ../../../../../Plugins/recruitee-koppeling/classes/VacancyTable.php:85
+msgid "No vacancies found"
+msgstr "Geen vacatures gevonden"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:180
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:188
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:197
+msgid "Not enabled"
+msgstr "Niet geactiveerd"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:127
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:131
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:168
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:205
+msgid "Not set"
+msgstr "Niet ingesteld"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:159
+msgid "PHP version"
+msgstr "PHP versie"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:119
+msgid "Plugin status"
+msgstr "Plugin status"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:163
+msgid "Plugin version"
+msgstr "Plugin versie"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:184
+msgid "Polylang"
+msgstr "Polylang"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:91
+#, php-format
+msgid "Popular %s"
+msgstr "Populaire %s"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:44
+msgid "Raw data"
+msgstr "Platte data"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:130
+msgid "Recruitee company ID"
+msgstr "Recruitee bedrijfs ID"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:147
+msgid "Recruitee Form ID"
+msgstr "Recruitee Form ID"
+
+#. Name of the plugin
+msgid "Recruitee integration"
+msgstr "Recruitee koppeling"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:126
+msgid "Recruitee URL"
+msgstr "Recruitee URL"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:156
+msgid "Required plugins"
+msgstr "Vereiste plugins"
+
+#: ../../../../../Plugins/recruitee-koppeling/wordpress-recruitee.php:30
+msgid "Return to Plugins"
+msgstr "Terug naar plugins"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:21
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:90
+#, php-format
+msgid "Search %s"
+msgstr "Zoek %s"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:203
+msgid "Set"
+msgstr "Instellen"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:29
+msgid "Set featured image"
+msgstr "Stel in als uitgelichte afbeelding"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:144
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:145
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:43
+msgid "Settings"
+msgstr "Instellingen"
+
+#: ../../../../../Plugins/recruitee-koppeling/wordpress-recruitee.php:30
+msgid ""
+"This plugin requires the Advanced Custom Fields Plugin to be installed and "
+"activated to function properly."
+msgstr ""
+"Deze plugin vereist dat de Advanced Custom Fields Plugin is geïnstalleerd en "
+"geactiveerd om correct te kunnen functioneren."
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:87
+#, php-format
+msgid "Update %s"
+msgstr "Update %s"
+
+#: ../../../../../Plugins/recruitee-koppeling/functions.php:47
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:17
+#, php-format
+msgid "Updated %s vacancies."
+msgstr "%s vacatures bijgewerkt"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:27
+#, php-format
+msgid "Uploaded to this %s"
+msgstr "Geüpload naar deze %s"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:31
+msgid "Use as featured image"
+msgstr "Gebruik als uitgelichte afbeelding"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:8
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:133
+msgid "Vacancies"
+msgstr "Vacatures"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:9
+msgid "Vacancy"
+msgstr "Vacture"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:15
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:16
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:18
+#, php-format
+msgctxt "Variant 1"
+msgid "New %s"
+msgstr "Nieuwe %s"
+
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:19
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:20
+#: ../../../../../Plugins/recruitee-koppeling/cpt/vacancy.php:86
+#, php-format
+msgid "View %s"
+msgstr "Bekijk %s"
+
+#: ../../../../../Plugins/recruitee-koppeling/templates/settings.php:172
+msgid "WordPress version"
+msgstr "WordPress versie"
+
+#: ../../../../../Plugins/recruitee-koppeling/form/gravity.php:39
+msgid "Working at"
+msgstr "Werken bij"

@@ -1,0 +1,109 @@
+.nav-tab-wrapper {
+    margin-bottom : 1rem !important;
+}
+
+#log-viewer-select {
+    padding: 10px 0 8px;
+    line-height: 28px;
+}
+
+#log-viewer-select h2 a {
+    vertical-align: middle;
+}
+
+#log-viewer {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    padding: 5px 20px;
+}
+
+#log-viewer pre {
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.content-cell {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+table.recruitee-id {
+    width: auto;
+}
+
+#sidebar-container {
+    width: 300px;
+    padding-left: 20px;
+}
+
+#sidebar-container .card {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#sidebar-container .card table tr th {
+    text-align: left;
+    white-space: nowrap;
+    padding-right: 15px;
+}
+
+@media screen and (max-width: 1486px) {
+    .content-cell {
+        display: block;
+    }
+
+    #sidebar-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    #sidebar-container .card {
+        margin-right: 15px;
+        width: 100%;
+        max-width: unset;
+        min-width: unset;
+    }
+
+    #sidebar-container .card.plugin {
+        width: 100%;
+    }
+
+    #sidebar-container .card:last-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #sidebar-container {
+        flex-wrap: wrap;
+    }
+
+    #sidebar-container .card {
+        width: unset;
+        margin-right: unset;
+    }
+
+    #sidebar-container .card.actions {
+        flex: 100%;
+    }
+}
+
+#log-viewer ul{
+    list-style: disc;
+    padding-left: 40px;
+}
+
+code {
+    display: block;
+    padding: 20px;
+    background: #f0f0f1;
+    width: 100%;
+    box-sizing: border-box;
+}

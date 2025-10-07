@@ -1,0 +1,32 @@
+# Hidden files and directories
+.*
+!.gitignore
+
+# IDE and editor files
+*.sublime-project
+*.sublime-workspace
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/*.log
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Build files
+*.min.js
+*.min.css
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
