@@ -50,12 +50,6 @@ function rec_cpt_vacancy() {
 	];
 
 	register_post_type(Constants::POST_TYPE, $args);
-	rec_post_type_add_capabilities(Constants::POST_TYPE, 'vacancies', apply_filters('rec_default_caps_roles', array('administrator', 'editor')));
-	rec_post_type_add_capabilities_create(Constants::POST_TYPE, 'vacancies', apply_filters('rec_create_caps_roles', array('administrator')));
-	rec_post_type_add_capabilities_edit(Constants::POST_TYPE, 'vacancies', apply_filters('rec_edit_caps_roles', array('administrator')));
-	rec_post_type_add_capabilities_publish(Constants::POST_TYPE, 'vacancies', apply_filters('rec_publish_caps_roles', array('administrator')));
-	rec_post_type_add_capabilities_delete(Constants::POST_TYPE, 'vacancies', apply_filters('rec_delete_caps_roles', array('administrator')));
-	flush_rewrite_rules();
 }
 
 

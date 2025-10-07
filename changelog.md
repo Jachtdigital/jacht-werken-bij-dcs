@@ -1,5 +1,20 @@
 # Changelog
 
+## [V1.0.2] - 2025-10-07
+
+### Fixed
+* Fixed capability management causing vacancies to go to trash instead of published
+* Removed `flush_rewrite_rules()` from running on every page load (performance improvement)
+* Removed capability setup from running on every init hook
+* Added proper plugin activation hook to set up capabilities once
+* Both administrators and editors can now create and publish vacancies
+
+### Changed
+* Capabilities are now set up only during plugin activation instead of on every page load
+* Improved plugin performance by removing unnecessary operations from init hook
+
+---
+
 ## [V1.0.1] - 2025-10-07
 
 ### Changed
