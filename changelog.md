@@ -1,5 +1,12 @@
 # Changelog
 
+## [V1.0.3] - 2025-10-07
+
+### Changed
+* Renamed main plugin file from `wordpress-recruitee.php` to `wordpress-vacancies.php`
+
+---
+
 ## [V1.0.2] - 2025-10-07
 
 ### Fixed
