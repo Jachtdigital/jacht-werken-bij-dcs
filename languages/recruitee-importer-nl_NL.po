@@ -256,7 +256,7 @@ msgstr "Recruitee URL"
 msgid "Required plugins"
 msgstr "Vereiste plugins"
 
-#: ../../../../../Plugins/recruitee-koppeling/wordpress-recruitee.php:30
+#: ../../../../../Plugins/jacht-werken-bij-dcs/wordpress-vacancies.php:30
 msgid "Return to Plugins"
 msgstr "Terug naar plugins"
 
@@ -280,7 +280,7 @@ msgstr "Stel in als uitgelichte afbeelding"
 msgid "Settings"
 msgstr "Instellingen"
 
-#: ../../../../../Plugins/recruitee-koppeling/wordpress-recruitee.php:30
+#: ../../../../../Plugins/jacht-werken-bij-dcs/wordpress-vacancies.php:30
 msgid ""
 "This plugin requires the Advanced Custom Fields Plugin to be installed and "
 "activated to function properly."
