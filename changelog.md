@@ -1,5 +1,12 @@
 # Changelog
 
+## [V1.0.6] - 2025-10-07
+
+### Changed
+* Cleaned up changelog to remove old Recruitee version history
+
+---
+
 ## [V1.0.5] - 2025-10-07
 
 ### Added
