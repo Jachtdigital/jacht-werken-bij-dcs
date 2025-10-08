@@ -1,5 +1,18 @@
 # Changelog
 
+## [V1.0.7] - 2025-10-07
+
+### Fixed
+* Fixed About tab not displaying (corrected README.md to readme.md case sensitivity)
+
+### Changed
+* Enhanced readme.md with comprehensive documentation
+* Combined information from readme.txt into readme.md
+* Added detailed sections: Features, Configuration, Frontend Integration, Language Support, Troubleshooting
+* Improved .gitignore to exclude .DS_Store files in all subdirectories
+
+---
+
 ## [V1.0.6] - 2025-10-07
 
 ### Changed
