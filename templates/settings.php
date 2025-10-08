@@ -163,7 +163,7 @@
         </div>
     <?php } elseif ($currentTab === 'about') { ?>
         <div id="log-viewer">
-			<?= Parsedown::instance()->text(file_get_contents(REC_PLUGIN_DIR . '/README.md')) ?>
+			<?= Parsedown::instance()->text(file_get_contents(REC_PLUGIN_DIR . '/readme.md')) ?>
         </div>
     <?php } ?>
 </div>
