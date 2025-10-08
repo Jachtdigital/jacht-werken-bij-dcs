@@ -1,5 +1,16 @@
 # Changelog
 
+## [V1.0.8] - 2025-10-07
+
+### Added
+* Language-specific readme support - About tab now displays Dutch or English based on WordPress language
+* Created Dutch readme (readme-nl_NL.md)
+
+### Changed
+* About tab automatically loads readme based on WordPress site language (nl_NL or fallback to en_US)
+
+---
+
 ## [V1.0.7] - 2025-10-07
 
 ### Fixed

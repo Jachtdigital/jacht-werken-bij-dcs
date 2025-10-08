@@ -163,7 +163,18 @@
         </div>
     <?php } elseif ($currentTab === 'about') { ?>
         <div id="log-viewer">
-			<?= Parsedown::instance()->text(file_get_contents(REC_PLUGIN_DIR . '/readme.md')) ?>
+			<?php
+				// Load language-specific readme
+				$locale = get_locale();
+				$readme_file = REC_PLUGIN_DIR . '/readme-' . $locale . '.md';
+
+				// Fall back to default readme.md if language-specific file doesn't exist
+				if (!file_exists($readme_file)) {
+					$readme_file = REC_PLUGIN_DIR . '/readme.md';
+				}
+
+				echo Parsedown::instance()->text(file_get_contents($readme_file));
+			?>
         </div>
     <?php } ?>
 </div>
