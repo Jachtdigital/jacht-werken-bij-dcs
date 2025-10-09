@@ -43,7 +43,7 @@ function rec_add_google_jobs_structered_data_to_vacancy() {
         $vac_period         = get_field('vac_period');
 
         // Map period to Schema.org unitText
-        $unit_text = '';
+        $unit_text = 'MONTH'; // Default to MONTH if not specified
         switch($vac_period) {
             case 'hour':
                 $unit_text = 'HOUR';
@@ -94,6 +94,13 @@ function rec_add_google_jobs_structered_data_to_vacancy() {
                 $education_credential_category = 'certificate';
                 $education_level = 'Beroepsopleiding';
                 break;
+            default:
+                // Default for any unmapped values
+                if (!empty($vac_education)) {
+                    $education_credential_category = 'diploma';
+                    $education_level = ucfirst(str_replace('_', ' ', $vac_education));
+                }
+                break;
         }
 
         // Map experience levels to text
@@ -138,10 +145,8 @@ function rec_add_google_jobs_structered_data_to_vacancy() {
                 "@type"                 => "Place",
                 "address"               => [
                     "@type"                 => "PostalAddress",
-                    "streetAddress"         => '',
-                    "addressLocality"       => $vac_city,
+                    "addressLocality"       => $vac_city ?: 'Netherlands',
                     "addressRegion"         => $vac_state_name,
-                    "postalCode"            => $vac_postal_code,
                     "addressCountry"        => $vac_country_code ?: 'NL'
                 ]
             ],
@@ -154,6 +159,11 @@ function rec_add_google_jobs_structered_data_to_vacancy() {
 
         // Add employment type (always required)
         $structuredData['employmentType'] = $vac_employment_val;
+
+        // Add optional address fields if available
+        if (!empty($vac_postal_code)) {
+            $structuredData['jobLocation']['address']['postalCode'] = $vac_postal_code;
+        }
 
         // Add job location type (remote) if applicable
         if (!empty($job_location_type)) {

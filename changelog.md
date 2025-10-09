@@ -1,5 +1,21 @@
 # Changelog
 
+## [V1.0.10] - 2025-10-09
+
+### Fixed
+* Fixed missing streetAddress field in jobLocation.address (removed empty field)
+* Fixed missing postalCode field in jobLocation.address (now conditionally added only when available)
+* Fixed invalid credentialCategory enum values for unmapped education types (added default case)
+* Fixed baseSalary missing unitText by adding default value 'MONTH'
+
+### Changed
+* streetAddress field now excluded from structured data (not collected by plugin)
+* postalCode field only included when value is available
+* Education credential category defaults to 'diploma' for any unmapped education codes
+* Salary period (unitText) defaults to 'MONTH' when not specified
+
+---
+
 ## [V1.0.9] - 2025-10-09
 
 ### Fixed
