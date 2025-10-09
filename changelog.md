@@ -1,5 +1,18 @@
 # Changelog
 
+## [V1.0.9] - 2025-10-09
+
+### Fixed
+* Fixed invalid credentialCategory enum values in JobPosting structured data
+* Fixed missing employmentType field in JobPosting structured data
+
+### Changed
+* Updated educationRequirements to use valid Schema.org enum values (diploma, degree, certificate)
+* Added educationalLevel property to preserve human-readable education level text
+* employmentType now always included with default value of FULL_TIME when not specified
+
+---
+
 ## [V1.0.8] - 2025-10-07
 
 ### Added

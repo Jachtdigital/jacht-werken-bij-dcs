@@ -8,7 +8,7 @@ Requires at least: 6.2
 Requires Plugins: advanced-custom-fields-pro
 Author: Jacht Digital Marketing
 Author URI: https://jacht.digital
-Version: 1.0.8
+Version: 1.0.9
 Text Domain: jacht-vacancies
 Domain Path: /languages
 */

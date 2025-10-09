@@ -18,7 +18,7 @@ function rec_add_google_jobs_structered_data_to_vacancy() {
 
         // Employment type
         $vac_employment     = get_field('vac_employment_type_code');
-        $vac_employment_val = '';
+        $vac_employment_val = 'FULL_TIME'; // Default value
         if ($vac_employment == 'fulltime' || $vac_employment == 'fulltime_fixed_term') {
             $vac_employment_val = 'FULL_TIME';
         } elseif ($vac_employment == 'parttime' || $vac_employment == 'parttime_fixed_term') {
@@ -67,25 +67,32 @@ function rec_add_google_jobs_structered_data_to_vacancy() {
         $vac_experience     = get_field('vac_experience_code');
 
         // Map education levels
-        $education_requirements = '';
+        $education_credential_category = '';
+        $education_level = '';
         switch($vac_education) {
             case 'vmbo':
-                $education_requirements = 'VMBO';
+                $education_credential_category = 'diploma';
+                $education_level = 'VMBO';
                 break;
             case 'mbo':
-                $education_requirements = 'MBO';
+                $education_credential_category = 'diploma';
+                $education_level = 'MBO';
                 break;
             case 'havo_vwo':
-                $education_requirements = 'HAVO/VWO';
+                $education_credential_category = 'diploma';
+                $education_level = 'HAVO/VWO';
                 break;
             case 'bachelor_degree':
-                $education_requirements = 'HBO Bachelor';
+                $education_credential_category = 'degree';
+                $education_level = 'HBO Bachelor';
                 break;
             case 'master_degree':
-                $education_requirements = 'WO Master';
+                $education_credential_category = 'degree';
+                $education_level = 'WO Master';
                 break;
             case 'vocational':
-                $education_requirements = 'Beroepsopleiding';
+                $education_credential_category = 'certificate';
+                $education_level = 'Beroepsopleiding';
                 break;
         }
 
@@ -145,10 +152,8 @@ function rec_add_google_jobs_structered_data_to_vacancy() {
             ]
         ];
 
-        // Add employment type if available
-        if (!empty($vac_employment_val)) {
-            $structuredData['employmentType'] = $vac_employment_val;
-        }
+        // Add employment type (always required)
+        $structuredData['employmentType'] = $vac_employment_val;
 
         // Add job location type (remote) if applicable
         if (!empty($job_location_type)) {
@@ -191,10 +196,11 @@ function rec_add_google_jobs_structered_data_to_vacancy() {
         }
 
         // Add education requirements if available
-        if (!empty($education_requirements)) {
+        if (!empty($education_credential_category)) {
             $structuredData['educationRequirements'] = [
                 "@type" => "EducationalOccupationalCredential",
-                "credentialCategory" => $education_requirements
+                "credentialCategory" => $education_credential_category,
+                "educationalLevel" => $education_level
             ];
         }
 
